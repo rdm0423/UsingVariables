@@ -19,6 +19,13 @@
 
     // Insert code here...
     
+    CGFloat height = 71.0;
+    CGFloat weight = 185.0;
+    CGFloat bodyMassIndex;
+    
+    bodyMassIndex = (weight / (height * height)) * 703;
+    
+    NSLog(@"%f is BMI for height: %.1f weight: %f", bodyMassIndex, height, weight);
     
     return YES;
 }
